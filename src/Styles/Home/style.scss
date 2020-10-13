@@ -1,0 +1,53 @@
+@import "../../App.scss";
+
+.home {
+    .header {
+        .content {
+            h1 {
+                color: #000;
+                font-weight: 900;
+                margin-bottom: 0;
+                font-family: 'Roboto', sans-serif;
+
+                @media (min-width: 992px) {
+                    font-size: 70px;
+                }
+            }
+
+            h5 {
+                font-weight: 300;
+                font-size: 16px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            @media (min-width: 992px) {
+                padding-top: 120px;
+            }
+        }
+
+        .image-column {
+            img {
+                width: 300px;
+
+                @media (min-width: 576px) {
+                    width: 500px;
+                }
+            }
+        }
+    }
+
+    // Nearest or Suggested Doctors
+    .suggested-doctors {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        h2 {
+            font-weight: 900;
+            font-family: 'Roboto', sans-serif;
+
+            @media (min-width: 992px) {
+                font-size: 40px;
+            }
+        }
+    }
+}
