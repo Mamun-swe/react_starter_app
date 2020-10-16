@@ -9,6 +9,8 @@ import DoctorsListComponent from '../../Components/DoctorsList/Index'
 import FooterCompoent from '../../Components/Footer/Index'
 
 import SearchPeopleImg from '../../Assets/Static/people_search.png'
+import ServiceImg from '../../Assets/Static/service.png'
+import { Link } from 'react-router-dom'
 
 const Index = () => {
     const [latitude, setLatitude] = useState()
@@ -78,10 +80,27 @@ const Index = () => {
                 <DoctorsListComponent doctors={doctors} />
             </div>
 
+            {/* Service */}
+            <div className="service">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12 col-lg-6 text-center text-lg-left content">
+                            <h1>We Provide</h1>
+                            <h3>24/7 hour service</h3>
+                            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an.</p>
+                            <Link to="/contact-us"
+                                type="button"
+                                className="btn shadow-none"
+                            >Contact Us</Link>
+                        </div>
+                        <div className="col-12 col-lg-6 text-center text-lg-right mt-4 mt-lg-0">
+                            <img src={ServiceImg} className="img-fluid" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <h1>Home</h1>
-            <p>Lat: {latitude}</p>
-            <p>Lang: {longitude}</p>
+            {/* Footer */}
             <FooterCompoent />
         </div>
     );

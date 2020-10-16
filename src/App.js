@@ -16,6 +16,8 @@ import LoginIndex from './Pages/Auth/Login'
 import RegisterIndex from './Pages/Auth/Register'
 import ResetIndex from './Pages/Auth/Reset'
 
+import DoctorAccountMaster from './Pages/Account/Doctor/Master'
+
 import FourOFour from './Pages/FourOFour/Index'
 
 function App() {
@@ -31,6 +33,8 @@ function App() {
             <Route exact path="/login" component={LoginIndex} />
             <Route exact path="/register" component={RegisterIndex} />
             <Route exact path="/reset" component={ResetIndex} />
+
+            <Route path="/doctor" component={DoctorAccountMaster} />
 
             <Route path="*" component={FourOFour} />
 

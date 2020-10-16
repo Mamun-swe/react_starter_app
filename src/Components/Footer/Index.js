@@ -21,7 +21,6 @@ const Index = () => {
                                 <img src={Logo} className="img-fluid" alt="..." />
                             </Link>
                             <br />
-                            <br />
                             <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. </p>
                         </div>
                     </div>

@@ -15,14 +15,11 @@ const Login = () => {
     const { register, handleSubmit, errors } = useForm()
     const [isLoading, setLoading] = useState(false)
 
-    // if (localStorage.getItem('token')) {
-    //     history.push('/account')
-    // }
-
     const onSubmit = async (data) => {
         setLoading(true)
         console.log(data)
-        console.log(history)
+        history.push('/doctor')
+
 
         // try {
         //     setLoading(true)
