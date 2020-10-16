@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useHistory } from 'react-router-dom'
 import '../../Styles/Account/Doctor/SideMenu/style.scss'
 import { Icon } from 'react-icons-kit'
 import {
@@ -13,6 +13,11 @@ import ProfileImg from '../../Assets/doctor.jpg'
 import { ic_edit } from 'react-icons-kit/md'
 
 const SideMenu = () => {
+    const history = useHistory()
+
+    const doLogout = () => {
+        history.push('/')
+    }
 
     return (
         <div className="side-menu">
@@ -69,8 +74,9 @@ const SideMenu = () => {
                 <button
                     type="button"
                     className="btn btn-block shadow-none"
+                    onClick={doLogout}
                 >
-                    <Icon icon={ic_lock} size={20} />
+                    <Icon icon={ic_lock} size={18} />
                     <span>logout</span>
                 </button>
             </div>
