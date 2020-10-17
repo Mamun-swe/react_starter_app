@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 
 import SideMenuComponent from '../../../Components/Doctor/SideMenu'
 import DashboardIndex from './Dashboard/Index'
-import RequestsIndex from './Requests/Index'
+import RequestsIndex from '../Doctor/Appointment-Request/Index'
 import Icon from 'react-icons-kit'
 import { ic_dehaze } from 'react-icons-kit/md'
 

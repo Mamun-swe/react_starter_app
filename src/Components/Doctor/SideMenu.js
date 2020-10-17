@@ -3,7 +3,6 @@ import { Link, NavLink, useHistory } from 'react-router-dom'
 import '../../Styles/Account/Doctor/SideMenu/style.scss'
 import { Icon } from 'react-icons-kit'
 import {
-    ic_home,
     ic_apps,
     ic_people,
     ic_lock
@@ -50,14 +49,6 @@ const SideMenu = () => {
                     exact
                     activeClassName="is-Active"
                     className="btn btn-block shadow-none"
-                    to="/">
-                    <Icon icon={ic_home} size={20} />
-                    <span>home</span>
-                </NavLink>
-                <NavLink
-                    exact
-                    activeClassName="is-Active"
-                    className="btn btn-block shadow-none"
                     to="/doctor/">
                     <Icon icon={ic_apps} size={20} />
                     <span>dashboard</span>
@@ -68,7 +59,7 @@ const SideMenu = () => {
                     className="btn btn-block shadow-none"
                     to="/doctor/requests">
                     <Icon icon={ic_people} size={20} />
-                    <span>patient requests</span>
+                    <span>appointment requests</span>
                 </NavLink>
 
                 <button
