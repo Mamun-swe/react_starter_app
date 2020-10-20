@@ -6,7 +6,7 @@ import { apiURL } from '../../../../Utils/apiURL'
 import ManageScheduleModal from '../../../../Components/Doctor/ManageScheduleModal'
 
 const Index = () => {
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(false)
     const [requests, setRequests] = useState([])
 
     useEffect(() => {

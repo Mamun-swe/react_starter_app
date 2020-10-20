@@ -5,6 +5,7 @@ import { Icon } from 'react-icons-kit'
 import {
     ic_apps,
     ic_people,
+    ic_info_outline,
     ic_lock
 } from 'react-icons-kit/md'
 
@@ -60,6 +61,14 @@ const SideMenu = () => {
                     to="/doctor/requests">
                     <Icon icon={ic_people} size={20} />
                     <span>appointment requests</span>
+                </NavLink>
+                <NavLink
+                    exact
+                    activeClassName="is-Active"
+                    className="btn btn-block shadow-none"
+                    to="/doctor/appointments">
+                    <Icon icon={ic_info_outline} size={20} />
+                    <span>appointments</span>
                 </NavLink>
 
                 <button

@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import '../../../Styles/Account/Doctor/master.scss'
 import { Switch, Route } from 'react-router-dom'
+import Icon from 'react-icons-kit'
+import { ic_dehaze } from 'react-icons-kit/md'
 
 import SideMenuComponent from '../../../Components/Doctor/SideMenu'
 import DashboardIndex from './Dashboard/Index'
 import RequestsIndex from '../Doctor/Appointment-Request/Index'
-import Icon from 'react-icons-kit'
-import { ic_dehaze } from 'react-icons-kit/md'
+import AppointmentsIndex from '../Doctor/Appointments/Index'
 
 
 const Master = () => {
@@ -47,6 +48,7 @@ const Master = () => {
                     <Switch>
                         <Route exact path="/doctor/" component={DashboardIndex} />
                         <Route exact path="/doctor/requests" component={RequestsIndex} />
+                        <Route exact path="/doctor/appointments" component={AppointmentsIndex} />
                     </Switch>
                 </div>
             </div>
