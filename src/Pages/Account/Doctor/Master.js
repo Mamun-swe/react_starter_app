@@ -5,6 +5,7 @@ import Icon from 'react-icons-kit'
 import { ic_dehaze } from 'react-icons-kit/md'
 
 import SideMenuComponent from '../../../Components/Doctor/SideMenu'
+import ProfileUpdateModal from '../../../Components/Doctor/ProfileUpdate'
 import DashboardIndex from './Dashboard/Index'
 import RequestsIndex from '../Doctor/Appointment-Request/Index'
 import AppointmentsIndex from '../Doctor/Appointments/Index'
@@ -52,6 +53,9 @@ const Master = () => {
                     </Switch>
                 </div>
             </div>
+
+            {/* Profile Update Modal */}
+            <ProfileUpdateModal />
         </div>
     );
 };
